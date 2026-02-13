@@ -1,22 +1,18 @@
-.carousel-item img {
-    height: 50%; 
-    object-fit:contain;
+:root {
+    --bs-primary:#ECBE25;
+    --bs-primary-rgb:236, 190, 37;
+    font-family: sans-serif;
 }
+
+
 #persona {
     text-align:right;
     justify-content:flex-end;
     margin-top: 0%;
     margin-right: 0%;
+    font-family: sans-serif
 }
 
-#carousel {
-    background-color: #671d95a6;
-    display: flex;
-    -ms-flex-item-align: center;
-    justify-content:flex-end;
-    align-items: center;
-
-}
 .about {
     display:flex;
     flex-direction:column;
@@ -24,39 +20,64 @@
     justify-content: space-around;
     margin-top: 1rem;
     font-size: clamp(.25rem, 5vw, 1rem);
-
+    
 }
-.h1{
-    background-color: #671d95a6;
+.title-text {
+    background-color: rgb(156,108,186);
     display: flex;
-    text-align:justify;
+    text-align:center;
     justify-content:center;
     align-items:flex-end;
     font-size: clamp(.25rem, 5vw, 4rem);
-}
-.carousel-item {
-    height: 300px;
-    width: 16%; /* Define una altura fija para el contenedor del carrusel */
-    background-color: #bf0b34; /* Fondo negro por si la imagen es pequeña */
+    font-family: sans-serif;
+    
 }
 
 .carousel-item img {
-    height: 100%;
-    width: 100%;
-    object-fit:fill;
-    border-radius: 20%; /* La imagen se ajustará sin cortarse y sin deformarse */
+    display: flex;
+    height: 25%;
+    width: 25%;
+    object-fit:contain;
+    border-radius: 30%; 
+    row-gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.img-j {
+    width: 200px;
+    height: fit-content;
+    height: 300px;
 }
 h1 {
-  /* Sintaxis: clamp(mínimo, ideal, máximo) */
-  font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-family: sans-serif;
 }
-.habilidades {
-    display:flex;
-    flex-direction:column;
-    text-align:left;
-    justify-content: space-evenly;
-    margin-top: 0;
-    font-size: clamp(.25rem, 5vw, 1rem);
-    background-color: #c160db;
+#fondo {
+    background-color: rgb(156,108,186);
+}
+.bg-navbar {
+    background-color: #ECBE25;
+}
+.fondo-1 {
+        background-color:rgb(121,57,162)
+    }
 
+
+    #carousel {
+        background-color:rgb(121,57,162) ;
+        display: flex;
+        -ms-flex-item-align: center;
+        justify-content:center;
+        align-items: center;  
+    }
+.listas {
+    color: 000;
+    list-style: none;
+    cursor: pointer;         
+    padding: 10px;
+    border-radius: 5px;
+}
+li:hover {
+    background-color: rgb(157, 227, 170) ;        
+    transform: translateX(10px); 
 }

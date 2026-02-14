@@ -14,9 +14,9 @@ crossorigin="anonymous">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-navbar sticky-top bg-warning p-2">
+<nav id="#inicio" class="navbar navbar-expand-lg bg-navbar sticky-top bg-warning p-2">
     <div class="container-fluid ">
-        <a class="navbar-brand" href="#inicio ">Inicio</a>
+        <a class="navbar-brand" href="#Inicio ">Inicio</a>
         <button class="navbar-toggler" 
             type="button" 
             data-bs-toggle="collapse" 
@@ -31,33 +31,37 @@ crossorigin="anonymous">
             <li class="nav-item">
                 <a class="nav-link active" 
             aria-current="page" 
-            href="#">Portada</a>
+            href="#Habilidades">Habilidades</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" 
-                href="#">Estudios</a>
+                href="#Experiencia">Experiencia</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" 
-                href="#">Experiencia</a>
+                href="#Formacion">Formación</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" 
-                href="#">Contacto</a>
+                href="#Datos">Datos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" 
+                href="#Contacto">Contacto</a>
             </li>
         </ul>
     </div>
     </div>
 </nav>
 
-<header id="fondo" class="container-fluid row justify-content-center">
-    <div id="carousel" class="carousel carousel-fade mx-auto col-12 "
+<header id="Inicio" class="container-fluid row justify-content-center fondo">
+    <div class="carousel carousel-fade mx-auto col-12 "
             data-bs-ride="carousel">
         <div class="carousel-inner ">
             <div class="carousel-item active ">
                 <img src="./assets/IMG/youngjoseph.jpg" class="d-block w-20 " alt="joseph joestar">
             </div>
-            <div class="carousel-item ">
+            <div class="carousel-item  ">
                 <img src="./assets/IMG/oldjoseph.jpg" class="d-block w-20" alt="joseph joestar">
             </div>
             <div class="carousel-item">
@@ -76,10 +80,10 @@ crossorigin="anonymous">
 </div>
 </header>
 
-<section id="carousel">
+<section class="carousel fondo" id="Habilidades">
     <div class="h-title container-fluid col-12 col-md-6">
         <h2 class="title-text fondo-1" >Habilidades Especiales</h2>
-            <div id="fondo">
+            <div class="fondo">
                 <ul class="list-group listas">
                     <li><p>Tácticas de Combate: Maestro en el uso de Hamon (Ondas) y proyectiles orgánicos (Clackers).</p>
                     </li>
@@ -100,9 +104,9 @@ crossorigin="anonymous">
     </div>
 
 </section>
-<section>
-    <section id="carousel">
-    <div class="h-title container-fluid col-12 col-md-6">
+<section id="Experiencia">
+    <section id="" class="fondo">
+    <div class="h-title container-fluid col-12 col-md-6 fondo-1">
         <h2 class="title-text fondo-1" >Experiencia Relevante</h2>
             <div >
                 <ul class="list-group listas">
@@ -142,57 +146,70 @@ crossorigin="anonymous">
     </div>
 
 </section>
-
-<h3 class="title-text fondo-1">Formación y Entrenamiento</h3>
-    <div class="row col-12">
-        <div class="card " style="width: 18rem;">
-            <img src="./assets/IMG/hamon-joseph.gif" class="card-img-top" alt="hamon-training">
-                <div class="card-body">
-                    <p class="card-text">Entrenamiento Maestro en Hamon | Isla de Air Supplena, Italia (1939).
-                    </p>
-                </div>
+<section class="Datos fondo img-card " id="Formacion"> 
+    <div >
+        <h3 class="title-text fondo-1 ">Formación y Entrenamiento</h3>
+    </div>
+    <div class=" forma-look row row col-12 col-md-6 col-lg-4">
+        <div class="box row col-6">
+            <img class="img-j" src="./assets/IMG/jojo-look.jpg" alt="mirada"><p>Educación General <br>| Londres / Nueva York (Interrumpida por viajes de negocios y destino familiar).</p>
         </div>
-        <div class="card " style="width: 18rem;">
-            <img src="./assets/IMG/jojo-look.jpg" class="card-img-top" alt="mirada">
-                <div class="card-body">
-                    <p class="card-text">Educación General | Londres / Nueva York (Interrumpida por viajes de negocios y destino familiar).
-                    </p>
-                </div>
+        <div class="box row col-6">
+            <img class="img-j" src="./assets/IMG/hamon-joseph.gif" alt="hamon-joseph"><p>Formación y Entrenamiento <br>
+                Entrenamiento Maestro en Hamon | Isla de Air Supplena, Italia (1939).</p>
         </div>
     </div>
-<section class="Datos">
-        <div>
-            <h4>Logros y Datos Curiosos</h4>
-        </div>
-        <div>
-            <div class="card" style="width: 18rem;">
+        
+</section>
+
+
+
+<section id="Datos" class="Datos fondo-1 img-card  ">
+    <div class="fondo-1  ">
+        <h4  class="title-text">Logros y Datos Curiosos</h4>
+    </div>
+        <div  class="row col-12 col-md-6 col-lg-4 d-flex ">
+            <div class="card tarjet-border col-6 fondo " style="width: 18rem;">
                     <img src="./assets/IMG/jojovscars.gif" class="card-img-top" alt="kars">
                 <div class="card-body">
                     <p class="card-text">Logro Científico: Primer hombre en enviar a una forma de vida perfecta al espacio exterior mediante una erupción volcánica.
                     </p>
                 </div>
         </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card tarjet-border col-6 fondo" style="width: 18rem;">
                     <img src="./assets/IMG/mano.jpg" class="card-img-top" alt="brazo">
             <div class="card-body">
                     <p class="card-text">Resiliencia: Poseedor de una mano protésica de alta tecnología diseñada por la ingeniería alemana de la década de los 30.
                     </p>
             </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card tarjet-border col-6 fondo " style="width: 18rem;">
                     <img src="./assets/IMG/ohmygodgf.gif" class="card-img-top" alt="frase celebre">
             <div class="card-body">
-                    <p class="card-text">Frase célebre: "¡Oh nooooo!" y "¡Holy Sh*t!".
+                    <p class="card-text">Frase célebre: "¡Oh nooooo!" , "¡Holy Sh*t!" y "Oh My God".
                     </p>
             </div>
         </div>
     </div>
-</section>
-<footer>
-    <div class="position-absolute d-inline-block sticky-bot">
-        <img  src="./assets/IMG/run.gif" alt="jojo-corriendo">
+    <div class="row col-12 col-md-6 col-lg-4">
+        <h4>Arbol familiar</h4>
+        <img src="./assets/IMG/arbol.jpg" alt="arbol familiar" class="tree col-8">
     </div>
+</section>
+<div class="fixed-bottom ">
+    <a href="#inicio">
+        <img class="flotante-derecha" src="./assets/IMG/run.gif" alt="jojo-corriendo" 
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'});" 
+        style="cursor: pointer;">
+    </a>
     
+</div>
+<footer id="Contacto" class="fondo">
+    <h4>Contacto</h4>
+        <ul>
+            <li> ✉️ jojo.nextline@speedwagon.com</li>
+            <li>🌐 https://www.google.com/search?q=joestar-realestate.com</li>
+        </ul>
 </footer>
 
 
